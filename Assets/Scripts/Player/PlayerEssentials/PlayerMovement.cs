@@ -15,9 +15,14 @@ public class PlayerMovement : MonoBehaviour
     public bool canDive;
     public float swimSpeed;
 
-    [Header("Buoyancy")]
-    public float floatOffset = 0.5f; // cuánto se hunde dentro del agua
-    public float floatForce = 5f;    // fuerza de flotación
+    [Header("PushObjs")]
+    public bool enablePushObjs;
+    public float playerStrenght;
+
+    [Header("CanClimb")]
+    public bool enableClimb;
+    public bool onClimbableSurface;
+    public float climbSpeed;
 
     [Header("GroundDetection")]
     public Transform groundCheck;
@@ -32,7 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
-    private float horizontalInput;
+
+    public float horizontalInput;
     private float verticalInput;
 
     void Awake()
@@ -45,27 +51,32 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        //if (isInTheWater && enableSwim)
-        //{
-        //    Swim(verticalInput);
-        //}
-
+        if (Input.GetButtonDown("Jump"))
         {
-            if (Input.GetButtonDown("Jump"))
+            if (isGrounded)
             {
-                if (isGrounded)
-                {
-                    Jump();
-                    canDoubleJump = true;
-                }
-                else if (enableDoubleJump && canDoubleJump)
-                {
-                    Jump();
-                    canDoubleJump = false;
-                }
+                Jump();
+                canDoubleJump = true;
+            }
+            else if (enableDoubleJump && canDoubleJump)
+            {
+                Jump();
+                canDoubleJump = false;
             }
         }
+
+        if(enableClimb && onClimbableSurface && Input.GetKey(KeyCode.W))
+        {
+            Climb();
+        }
     }
+
+    void Climb()
+    {
+        if (!onClimbableSurface) { return; }
+        rb.linearVelocity = new Vector2 (horizontalInput * climbSpeed, verticalInput * climbSpeed);
+    }
+
 
     void FixedUpdate()
     {
@@ -78,14 +89,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-    }
-
-    void Swim(float verticalInput)
-    {
-
-        float targetY = verticalInput != 0 ? verticalInput * swimSpeed : 0.5f;
-
-        rb.linearVelocity = new Vector2(horizontalInput * swimSpeed, targetY);
     }
 
     void CheckGround()
@@ -114,9 +117,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (isInTheEdge)
         {
-
-
-            // Detecta agua debajo
             RaycastHit2D hit = Physics2D.Raycast(
                 groundCheck.position,
                 Vector2.down,
@@ -124,7 +124,6 @@ public class PlayerMovement : MonoBehaviour
                 waterLayer
             );
 
-            // Detecta orilla lateral
 
             isInTheWater = hit.collider != null;
 
@@ -155,28 +154,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.gravityScale = 1f;
             }
-
-
-            //if (enableSwim)
-            //{
-            //    if (isInTheWater)
-            //    {
-            //        // Gravedad reducida para nadar
-            //        rb.gravityScale = 0.3f;
-            //    }
-            //    if (!isInTheEdge)
-            //    {
-            //        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-            //    }
-            //    else
-            //    {
-            //        // Flotabilidad automática si no puede nadar
-            //        rb.gravityScale = 0f;
-            //        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 1f); // empuje hacia arriba
-
-            //        // En la orilla, mantener flotando sin subir/bajar
-            //    }
-            //}
         }
         else
         {
@@ -186,8 +163,6 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        //if (groundCheck == null) return;
-
         Gizmos.color = Color.red;
         Gizmos.DrawLine(
             groundCheck.position,
