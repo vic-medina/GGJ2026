@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 709e2e7bb642a0045b183733b793861f
+guid: 817087c90fc0ba948abc9dbecad9741f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4304333269268083760
-    second: mundo2_completo_0
+      213: 7037874650286081876
+    second: anim caminar 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mundo2_completo_0
+      name: anim caminar 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2240
-        height: 960
+        x: 15
+        y: 43
+        width: 782
+        height: 902
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0db416a62bfe344c0800000000000000
-      internalID: -4304333269268083760
+      spriteID: 4574708c4bd8ba160800000000000000
+      internalID: 7037874650286081876
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mundo2_completo_0: -4304333269268083760
+      anim caminar 1_0: 7037874650286081876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

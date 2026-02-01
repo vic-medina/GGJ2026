@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EnemyClass : MonoBehaviour
 {
-    public float speed = 2f;       // velocidad de movimiento
-    public float moveDuration = 2f; // tiempo que avanza
-    public float waitDuration = 1f; // tiempo que espera
-    public float limitDir = 1f;    // rango de dirección aleatoria
+    public float speed = 2f;
+    public float moveDuration = 2f;
+    public float waitDuration = 1f;
+    public float limitDir = 1f;
 
     public Transform groundCheck;
     public float groundCheckDistance = 0.2f;
@@ -18,11 +18,16 @@ public class EnemyClass : MonoBehaviour
     public Transform playerTf;
     public float chaseSpeed;
 
-
-
     [SerializeField] private float timer;
     [SerializeField] private float currentDir;
     [SerializeField] private bool isWaiting;
+
+    // Animator
+    public Animator anim;
+    private string currentAnimState;
+
+    // SpriteRenderer para flip
+    public SpriteRenderer spriteRenderer;
 
     void Awake()
     {
@@ -34,35 +39,35 @@ public class EnemyClass : MonoBehaviour
     void FixedUpdate()
     {
         CheckGround();
-        //if (chasingPlayer && !canWalk)
-        //{
-        //    var pos = transform.position;
-        //    pos.x += -1 * speed * Time.fixedDeltaTime;
-        //    transform.position = pos;
-        //    return;
-        //}
+
         if (chasingPlayer)
         {
-            Debug.LogWarning("Cazando");
             var playerDistance = (playerTf.position.x - transform.position.x);
             var pos = transform.position;
             pos.x += playerDistance * chaseSpeed * Time.deltaTime;
             transform.position = pos;
+
+            SetAnimation("Run");
+
+            // Flip hacia el jugador
+            spriteRenderer.flipX = playerDistance < 0;
             return;
         }
+
         if (!canWalk && !chasingPlayer)
         {
             currentDir *= -1;
             var pos = transform.position;
             pos.x += currentDir * speed * Time.fixedDeltaTime;
             transform.position = pos;
+
+            SetAnimation("Run");
         }
+
         if (canWalk && !chasingPlayer)
         {
             if (!isWaiting)
             {
-                // mover al enemigo
-                //transform.position += new Vector3(currentDir, 0f, 0f) * speed * Time.fixedDeltaTime;
                 var pos = transform.position;
                 pos.x += currentDir * speed * Time.fixedDeltaTime;
                 transform.position = pos;
@@ -70,33 +75,35 @@ public class EnemyClass : MonoBehaviour
                 timer -= Time.fixedDeltaTime;
                 if (timer <= 0f)
                 {
-                    // pasa a estado de espera
                     isWaiting = true;
                     timer = waitDuration;
                 }
+
+                SetAnimation("Run");
             }
             else
             {
-                // enemigo quieto
                 timer -= Time.fixedDeltaTime;
                 if (timer <= 0f)
                 {
-                    // cambia dirección y vuelve a moverse
                     currentDir = GetRandomDir();
                     isWaiting = false;
                     timer = moveDuration;
                 }
+
+                SetAnimation("Idle");
             }
         }
+
+        // Flip según dirección en patrulla
+        if (!chasingPlayer)
+            spriteRenderer.flipX = currentDir < 0;
     }
 
     private float GetRandomDir()
     {
         float newDir = Random.Range(-limitDir, limitDir);
-        if (newDir == 0f)
-        {
-            newDir = 1f; // evitar quedarse en 0
-        }
+        if (newDir == 0f) newDir = 1f;
         return newDir;
     }
 
@@ -109,15 +116,7 @@ public class EnemyClass : MonoBehaviour
             groundLayer
         );
         isGrounded = hit.collider != null;
-
-        if (isGrounded)
-        {
-            canWalk = true;
-        }
-        else
-        {
-            canWalk = false;
-        }
+        canWalk = isGrounded;
     }
 
     void OnDrawGizmosSelected()
@@ -127,5 +126,12 @@ public class EnemyClass : MonoBehaviour
             groundCheck.position,
             groundCheck.position + Vector3.down * groundCheckDistance
         );
+    }
+
+    void SetAnimation(string newState)
+    {
+        if (currentAnimState == newState) return;
+        currentAnimState = newState;
+        anim.SetTrigger(newState);
     }
 }
