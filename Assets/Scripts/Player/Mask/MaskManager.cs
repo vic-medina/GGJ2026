@@ -1,45 +1,71 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaskManager : MonoBehaviour
+namespace GGJ2026.Mask
 {
-    public int currentMask;
-    public List<GameObject> maskList = new List<GameObject>();
-
-    void Restart()
+    public class MaskManager : MonoBehaviour
     {
-        currentMask = 0;
-        ChangeMask(currentMask);
-    }
+        [Header("MaskList")]
+        public int currentMask;
+        public List<GameObject> maskList = new List<GameObject>();
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        [Header("Settings")]
+        public float changeMaskCooldown;
+        public float cooldownTimer;
+        public bool canChangeMask;
+
+        private void Start()
         {
-            ChangeMask(0);  
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ChangeMask(1);  
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            ChangeMask(2);  
+            Restart();
         }
 
-    }
-
-    public void ChangeMask(int maskIndex)
-    {
-        currentMask = maskIndex;
-        for (int i = 0; i < maskList.Count; i++) 
+        void Restart()
         {
-            if(i == maskIndex)
+            currentMask = 0;
+            ChangeMask(currentMask);
+        }
+
+        private void Update()
+        {
+            if (!canChangeMask)
             {
-                maskList[i].SetActive(true);
-                continue;
+                cooldownTimer -= Time.deltaTime;
+                if (cooldownTimer <= 0f)
+                {
+                    canChangeMask = true;
+                }
+                return;
             }
-            maskList[i].SetActive(false);
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                ChangeMask(0);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                ChangeMask(1);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                ChangeMask(2);
+            }
+        }
+
+        public void ChangeMask(int maskIndex)
+        {
+            currentMask = maskIndex;
+            for (int i = 0; i < maskList.Count; i++)
+            {
+                if (i == maskIndex)
+                {
+                    maskList[i].SetActive(true);
+                    continue;
+                }
+                maskList[i].SetActive(false);
+
+                canChangeMask = false;
+                cooldownTimer = changeMaskCooldown;
+            }
         }
     }
 }
