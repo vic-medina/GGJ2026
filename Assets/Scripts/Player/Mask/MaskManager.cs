@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,6 +6,9 @@ namespace GGJ2026.Mask
 {
     public class MaskManager : MonoBehaviour
     {
+        [Header("References")]
+        public MaskPowerUps maskPowerUps;
+
         [Header("MaskList")]
         public int currentMask;
         public List<GameObject> maskList = new List<GameObject>();
@@ -54,6 +58,7 @@ namespace GGJ2026.Mask
         public void ChangeMask(int maskIndex)
         {
             currentMask = maskIndex;
+            maskPowerUps.SetCurrentPowerUps(maskIndex);
             for (int i = 0; i < maskList.Count; i++)
             {
                 if (i == maskIndex)

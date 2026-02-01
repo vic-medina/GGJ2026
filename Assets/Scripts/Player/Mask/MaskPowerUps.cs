@@ -1,43 +1,43 @@
 using UnityEngine;
+using GGJ2026.Ability.Frog;
 
 namespace GGJ2026.Mask
 {
     public class MaskPowerUps : MonoBehaviour
     {
-        [Header("References")]
-        public MaskManager maskManager;
-
         [Header("Setting")]
         public int currentPowerUps;
 
         [Header("FrogPowerUps")]
+        public FrogAbility frogAbility;
         public bool enableFrogPowerUps;
-        public bool canDoubleJump;
-        public bool canSwim;
 
         [Header("BearPowerUps")]
+        public BearAbility bearAbility;
         public bool enableBearPowerUps;
-        public bool canPushObjects;
-        public bool canClimb;
 
         [Header("EaglePowerUps")]
+        public EagleAbility eagleAbility;
         public bool enableEaglePowerUps;
-        public bool canLevitate;
-        public bool canDash;
 
         private void Start()
         {
             Restart();
         }
 
-        void Restart()
+        private void Update()
         {
-            currentPowerUps = maskManager.currentMask;
-            SetCurrentPowerUps();
+
         }
 
-        void SetCurrentPowerUps()
+        void Restart()
         {
+
+        }
+
+        public void SetCurrentPowerUps(int maskIndex)
+        {
+            currentPowerUps = maskIndex;
             DisableAllPowerUps();
 
             switch (currentPowerUps)
@@ -59,40 +59,34 @@ namespace GGJ2026.Mask
         void DisableAllPowerUps()
         {
             // Frog
+            frogAbility.enabled = false;
             enableFrogPowerUps = false;
-            canDoubleJump = false;
-            canSwim = false;
 
             // Bear
+            bearAbility.enabled = false;
             enableBearPowerUps = false;
-            canPushObjects = false;
-            canClimb = false;
 
             // Eagle
             enableEaglePowerUps = false;
-            canLevitate = false;
-            canDash = false;
+            eagleAbility.enabled = false;
         }
 
         void EnableFrogPowerUps()
         {
             enableFrogPowerUps = true;
-            canDoubleJump = true;
-            canSwim = true;
+            frogAbility.enabled = true;
         }
 
         void EnableBearPowerUps()
         {
             enableBearPowerUps = true;
-            canPushObjects = true;
-            canClimb = true;
+            bearAbility.enabled = true;
         }
 
         void EnableEaglePowerUps()
         {
+            eagleAbility.enabled = true;
             enableEaglePowerUps = true;
-            canLevitate = true;
-            canDash = true;
         }
     }
 }

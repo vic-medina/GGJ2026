@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -9,23 +10,41 @@ namespace GGJ2026.Player.BaseMovement
         public Transform groundCheck;
         public LayerMask groundLayer;
         public bool isGrounded;
+        public Action OnGround;
+
+        [Header("OnAir")]
+        public bool onAir;
+        public Action OnAir;
 
         [Header("Water")]
         public LayerMask waterLayer;
         public bool isSubmerged;
+        public Action OnWater;
 
         [Header("EdgeWater")]
         public Transform edgeCheck;
         public bool edgeUnderWater;
+        public Action UnderWater;
 
         [Header("RaycastSettings")]
         public float rayDistance;
 
-        private void FixedUpdate()
+        private void Update()
         {
             CheckGround();
             CheckWater();
             CheckEdgeWater();
+
+            if (!isSubmerged)
+            {
+                if (!isGrounded && !edgeUnderWater)
+                {
+                    onAir = true;
+                    OnAir?.Invoke();
+                    return;
+                }
+                onAir = false;
+            }
         }
 
         void CheckGround()
@@ -38,6 +57,11 @@ namespace GGJ2026.Player.BaseMovement
             );
 
             isGrounded = hit.collider != null;
+            if (isGrounded)
+            {
+                OnGround?.Invoke();
+                onAir = false;
+            }
         }
 
         void CheckWater()
@@ -50,6 +74,10 @@ namespace GGJ2026.Player.BaseMovement
             );
 
             isSubmerged = hit.collider != null;
+            if (isSubmerged)
+            {
+                OnWater?.Invoke();
+            }
         }
 
         void CheckEdgeWater()
@@ -62,6 +90,11 @@ namespace GGJ2026.Player.BaseMovement
             );
 
             edgeUnderWater = hit.collider != null;
+            if (edgeUnderWater)
+            {
+                UnderWater?.Invoke();
+                onAir = false;
+            }
         }
 
         void OnDrawGizmosSelected()

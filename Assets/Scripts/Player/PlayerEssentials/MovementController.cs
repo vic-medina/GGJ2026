@@ -8,15 +8,25 @@ namespace GGJ2026.Player.BaseMovement
         [Header("References")]
         public Rigidbody2D rb;
         public FloorsDetections floorDetect;
+        public EagleAbility eagleAbility;
 
         [Header("BaseMovement")]
         public float moveSpeed;
         public float jumpForce;
+        public bool stopMovement;
 
         [Header("Position")]
         public float horizontalInput;
         public float verticalInput;
         public Vector2 initialPos;
+
+        void Start()
+        {
+            //eagleAbility.OnDash += () =>
+            //{
+            //    stopMovement = true;
+            //};
+        }
 
         public void Restart()
         {
@@ -26,11 +36,6 @@ namespace GGJ2026.Player.BaseMovement
         private void Awake()
         {
             initialPos = transform.position;
-        }
-
-        void Start()
-        {
-
         }
 
         void Update()
@@ -46,6 +51,7 @@ namespace GGJ2026.Player.BaseMovement
 
         private void FixedUpdate()
         {
+            if (stopMovement) { return; }
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
         }
 
@@ -55,5 +61,4 @@ namespace GGJ2026.Player.BaseMovement
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
-
 }
