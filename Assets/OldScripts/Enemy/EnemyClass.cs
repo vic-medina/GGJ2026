@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyClass : MonoBehaviour
 {
+    public Vector2 initialPos;
     public float speed = 2f;
     public float moveDuration = 2f;
     public float waitDuration = 1f;
@@ -22,6 +23,8 @@ public class EnemyClass : MonoBehaviour
     [SerializeField] private float currentDir;
     [SerializeField] private bool isWaiting;
 
+    public AbsoluteGameManager gameManager;
+
     // Animator
     public Animator anim;
     private string currentAnimState;
@@ -34,6 +37,15 @@ public class EnemyClass : MonoBehaviour
         currentDir = GetRandomDir();
         timer = moveDuration;
         isWaiting = false;
+        initialPos = transform.position;
+
+        gameManager = FindAnyObjectByType<AbsoluteGameManager>();
+        gameManager.enemyClasses.Add(this);
+    }
+
+    public void Restart()
+    {
+        transform.position = initialPos;
     }
 
     void FixedUpdate()

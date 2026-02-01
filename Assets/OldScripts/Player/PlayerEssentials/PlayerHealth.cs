@@ -6,6 +6,7 @@ namespace GGJ2026.Player.Health
     public class PlayerHealth : MonoBehaviour
     {
         public MovementController movementController;
+        public AbsoluteGameManager GM;
         public int maxHealth;
         public int currentHealth;
 
@@ -33,6 +34,7 @@ namespace GGJ2026.Player.Health
         {
             Debug.Log("Y murio");
             movementController.stopMovement = true;
+            GM.GameOver();
         }
     }
 }

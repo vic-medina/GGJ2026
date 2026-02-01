@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 156789216}
   - component: {fileID: 156789215}
   m_Layer: 5
-  m_Name: Title_Txt
+  m_Name: Eco del Totem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem Ipsum
+  m_text: 'Eco del totem
 
 '
   m_isRightToLeft: 0
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9045b61f6c6684b418f619d19e7b1ad2, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
