@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public int gameSceneIndex;
+    public int gameSceneIndex = 1;
     public GameObject creditsPanel;
 
     private void Awake()

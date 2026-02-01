@@ -45,5 +45,9 @@ public class AbsoluteGameManager : MonoBehaviour
         {
             Restart();
         }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            GameOver();
+        }
     }
 }
