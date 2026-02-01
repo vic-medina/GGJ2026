@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -24,6 +25,15 @@ public class PlayerMovement : MonoBehaviour
     public bool onClimbableSurface;
     public float climbSpeed;
 
+    [Header("CanDash")]
+    public bool enableDash;
+    public float dashSpeed;
+    private bool isDashing;
+    private bool isfloating;
+    private float dashTime = 0.2f;
+    private float dashTimer;
+
+
     [Header("GroundDetection")]
     public Transform groundCheck;
     public Transform waterCheck;
@@ -40,10 +50,17 @@ public class PlayerMovement : MonoBehaviour
 
     public float horizontalInput;
     private float verticalInput;
+    private Vector2 initialPos;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        initialPos = transform.position;
+    }
+
+    public void Restart()
+    {
+        transform.position = initialPos;
     }
 
     void Update()
@@ -65,25 +82,59 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if(enableClimb && onClimbableSurface && Input.GetKey(KeyCode.W))
+        if (enableClimb && onClimbableSurface && Input.GetKey(KeyCode.W))
         {
             Climb();
         }
+
+        if (enableDash && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Debug.Log("Dash");
+            if (horizontalInput == 0) { return; }
+
+            Dash(new Vector2(horizontalInput, 0f));
+        }
+
+        if (!isGrounded && enableDash && Input.GetKeyDown(KeyCode.Space))
+        {
+            isfloating = true;
+        }
+
+        if (isfloating && Input.GetKey(KeyCode.Space))
+        {
+            rb.gravityScale = .3f;
+            rb.linearVelocity = new Vector2(horizontalInput, -1f);
+        }
+        else
+        {
+            rb.gravityScale = .3f;
+        }
+
     }
 
     void Climb()
     {
         if (!onClimbableSurface) { return; }
-        rb.linearVelocity = new Vector2 (horizontalInput * climbSpeed, verticalInput * climbSpeed);
+        rb.linearVelocity = new Vector2(horizontalInput * climbSpeed, verticalInput * climbSpeed);
     }
 
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        if (isDashing)
+        {
+            dashTimer -= Time.fixedDeltaTime;
+            if (dashTimer <= 0f) isDashing = false;
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+        }
+
         CheckGround();
         CheckWater();
     }
+
 
     void Jump()
     {
@@ -103,7 +154,10 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = hit.collider != null;
 
         if (isGrounded)
+        {
             canDoubleJump = true;
+            isfloating = false;
+        }
     }
     void CheckWater()
     {
@@ -160,6 +214,14 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = 1f;
         }
     }
+
+    void Dash(Vector2 dashDirection)
+    {
+        isDashing = true;
+        dashTimer = dashTime;
+        rb.linearVelocity = dashDirection.normalized * dashSpeed;
+    }
+
 
     void OnDrawGizmosSelected()
     {
