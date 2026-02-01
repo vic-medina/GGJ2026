@@ -1,12 +1,22 @@
 using UnityEngine;
 using GGJ2026.Ability.Frog;
+using GGJ2026.Player.BaseMovement;
 
 namespace GGJ2026.Mask
 {
     public class MaskPowerUps : MonoBehaviour
     {
+        [Header("References")]
+        public MovementController movController;
+        public Animator anim;
+
         [Header("Setting")]
         public int currentPowerUps;
+
+        [Header("Animator Controllers")]
+        public RuntimeAnimatorController frogController;
+        public RuntimeAnimatorController bearController;
+        public RuntimeAnimatorController eagleController;
 
         [Header("FrogPowerUps")]
         public FrogAbility frogAbility;
@@ -32,7 +42,7 @@ namespace GGJ2026.Mask
 
         void Restart()
         {
-
+            SetCurrentPowerUps(0);
         }
 
         public void SetCurrentPowerUps(int maskIndex)
@@ -44,12 +54,15 @@ namespace GGJ2026.Mask
             {
                 case 0: // Frog
                     EnableFrogPowerUps();
+                    anim.runtimeAnimatorController = frogController;
                     break;
                 case 1: // Bear
                     EnableBearPowerUps();
+                    anim.runtimeAnimatorController = bearController;
                     break;
                 case 2: // Eagle
                     EnableEaglePowerUps();
+                    anim.runtimeAnimatorController = eagleController;
                     break;
                 default:
                     break;

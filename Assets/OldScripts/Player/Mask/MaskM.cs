@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaskManager : MonoBehaviour
+public class MaskManagerF : MonoBehaviour
 {
     public int currentMask;
     public List<GameObject> maskList = new List<GameObject>();

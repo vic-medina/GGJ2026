@@ -1,4 +1,5 @@
 using UnityEngine;
+using GGJ2026.Player.Health;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -6,13 +7,14 @@ public class EnemyAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Entro a Attack");
         if (isAttacking)
         {
-            var player = collision.GetComponent<PlayerHealth>();
+            var player = collision.GetComponentInChildren<PlayerHealth>();
             if (player != null)
             {
-
-                player.Die();
+                Debug.Log("Player");
+                player.TakeDamage();
             }
         }
     }

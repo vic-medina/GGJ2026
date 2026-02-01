@@ -850,6 +850,7 @@ GameObject:
   - component: {fileID: 484148523}
   - component: {fileID: 484148525}
   - component: {fileID: 484148526}
+  - component: {fileID: 484148527}
   m_Layer: 0
   m_Name: chaseRange
   m_TagString: Untagged
@@ -920,9 +921,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03d33347bff73d4f9cad9cbb1d626b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyClass: {fileID: 1511243564}
+  enemyClass: {fileID: 0}
   maskManager: {fileID: 0}
   enemyAttack: {fileID: 1790746528}
+  maskToIgnore: 0
+  checkMask: 0
+--- !u!114 &484148527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484148522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10df870560855a34484c90987b0ee3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyClass: {fileID: 1511243570}
+  maskManager: {fileID: 0}
+  enemyAttack: {fileID: 0}
   maskToIgnore: 0
   checkMask: 0
 --- !u!1 &519420028
@@ -2658,9 +2676,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1511243566}
   - component: {fileID: 1511243565}
-  - component: {fileID: 1511243564}
   - component: {fileID: 1511243568}
   - component: {fileID: 1511243569}
+  - component: {fileID: 1511243570}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -2668,34 +2686,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1511243564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511243563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74af27a1c61a22741bbbe54f7fac044e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  moveDuration: 2
-  waitDuration: 5
-  limitDir: 2
-  groundCheck: {fileID: 1133693338}
-  groundCheckDistance: 0.5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  canWalk: 1
-  chasingPlayer: 0
-  playerTf: {fileID: 0}
-  chaseSpeed: 2
-  timer: 0
-  currentDir: 0
-  isWaiting: 0
 --- !u!212 &1511243565
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2842,6 +2832,34 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5158224, y: 0.83262974}
   m_EdgeRadius: 0
+--- !u!114 &1511243570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511243563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25021ac18a654494695403983ec189c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  moveDuration: 2
+  waitDuration: 1
+  limitDir: 1
+  groundCheck: {fileID: 0}
+  groundCheckDistance: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  canWalk: 0
+  chasingPlayer: 0
+  playerTf: {fileID: 0}
+  chaseSpeed: 0
+  timer: 0
+  currentDir: 0
+  isWaiting: 0
 --- !u!1 &1606524583
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3073,7 @@ GameObject:
   - component: {fileID: 1790746527}
   - component: {fileID: 1790746528}
   - component: {fileID: 1790746529}
+  - component: {fileID: 1790746530}
   m_Layer: 0
   m_Name: attackRange
   m_TagString: Untagged
@@ -3126,6 +3145,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.98
+--- !u!114 &1790746530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790746526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c55a6e612e2364e97ca75a63435f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttacking: 0
 --- !u!1 &1888529544
 GameObject:
   m_ObjectHideFlags: 0

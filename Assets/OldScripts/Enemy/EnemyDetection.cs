@@ -1,4 +1,5 @@
 using UnityEngine;
+using GGJ2026.Mask;
 
 public class EnemyDetection : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class EnemyDetection : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.LogWarning("Entro");
-        maskManager = collision.GetComponent<MaskManager>();
+        maskManager = collision.GetComponentInChildren<MaskManager>();
         checkMask = true;
         //CheckMask(); 
     }

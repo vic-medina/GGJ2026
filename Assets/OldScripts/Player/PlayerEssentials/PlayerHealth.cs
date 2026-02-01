@@ -1,18 +1,38 @@
+using GGJ2026.Player.BaseMovement;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+namespace GGJ2026.Player.Health
 {
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    var enemy = collision.GetComponent<EnemyClass>();
-    //    if (enemy != null)
-    //    {
-    //        Die();
-    //    }
-
-    //}
-    public void Die()
+    public class PlayerHealth : MonoBehaviour
     {
-        Debug.Log("Y murio");
+        public MovementController movementController;
+        public int maxHealth;
+        public int currentHealth;
+
+        private void Awake()
+        {
+            currentHealth = maxHealth;
+        }
+
+        public void Restart()
+        {
+            movementController.stopMovement = false;
+            currentHealth = maxHealth;
+        }
+
+        public void TakeDamage()
+        {
+            currentHealth -= 1;
+            if(currentHealth <= 0)
+            {
+                Die();
+            }
+        }
+
+        public void Die()
+        {
+            Debug.Log("Y murio");
+            movementController.stopMovement = true;
+        }
     }
 }

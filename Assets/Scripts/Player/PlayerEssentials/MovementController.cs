@@ -9,6 +9,7 @@ namespace GGJ2026.Player.BaseMovement
         public Rigidbody2D rb;
         public FloorsDetections floorDetect;
         public EagleAbility eagleAbility;
+        public Animator anim;
 
         [Header("BaseMovement")]
         public float moveSpeed;
@@ -22,10 +23,7 @@ namespace GGJ2026.Player.BaseMovement
 
         void Start()
         {
-            //eagleAbility.OnDash += () =>
-            //{
-            //    stopMovement = true;
-            //};
+
         }
 
         public void Restart()
@@ -40,8 +38,23 @@ namespace GGJ2026.Player.BaseMovement
 
         void Update()
         {
+            if (stopMovement) { return; }
             horizontalInput = Input.GetAxisRaw("Horizontal");
             verticalInput = Input.GetAxisRaw("Vertical");
+
+            // Activar animación de correr
+            bool isRunning = horizontalInput != 0 && !stopMovement;
+            anim.SetBool("Run", isRunning);
+
+            // Flip según dirección
+            if (horizontalInput > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1); // derecha
+            }
+            else if (horizontalInput < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1); // izquierda
+            }
 
             if (Input.GetButtonDown("Jump") && floorDetect.isGrounded)
             {

@@ -11,13 +11,13 @@ public class Mask2Interactale : MonoBehaviour
     public Mask2Types maskType;
 
     private PlayerMovement playerOnSurface;
-    private MaskManager correctMask;
+    private MaskManagerF correctMask;
     private bool playerInside = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         playerOnSurface = collision.GetComponent<PlayerMovement>();
-        correctMask = collision.GetComponent<MaskManager>();
+        correctMask = collision.GetComponent<MaskManagerF>();
 
         if (maskType == Mask2Types.OBJ && playerOnSurface != null && correctMask != null)
         {
@@ -44,7 +44,7 @@ public class Mask2Interactale : MonoBehaviour
         if (maskType == Mask2Types.WALL)
         {
             var player = collision.GetComponent<PlayerMovement>();
-            var mask = collision.GetComponent<MaskManager>();
+            var mask = collision.GetComponent<MaskManagerF>();
 
             if (player != null && mask != null)
             {
