@@ -16,10 +16,11 @@ public class BearAbility : MonoBehaviour
 
     private void Update()
     {
-        if (!canClimb) { return; }
+        if (!canClimb) { movController.anim.SetTrigger("!Climb"); return; }
         if (Input.GetKey(KeyCode.W))
         {
             rb.linearVelocity = new Vector2(movController.horizontalInput * climbSpeed, movController.verticalInput * climbSpeed);
+            movController.anim.SetTrigger("Climb");
         }
     }
 
@@ -34,6 +35,7 @@ public class BearAbility : MonoBehaviour
                 canClimb = true;
                 break;
             case InteractableTypes.OBJ:
+                movController.anim.SetTrigger("Push");
                 objInteraction.isMoving = true;
                 objInteraction.direction = movController.horizontalInput;
                 objInteraction.incomingForce = strength;
@@ -54,6 +56,7 @@ public class BearAbility : MonoBehaviour
                 canClimb = false;
                 break;
             case InteractableTypes.OBJ:
+                movController.anim.SetTrigger("!Push");
                 objInteraction.StopMove();
                 break;
             default:

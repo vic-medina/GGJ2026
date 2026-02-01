@@ -21,19 +21,19 @@ namespace GGJ2026.Ability.Frog
         {
             floorsDetections.OnGround += EneableDoubleJump;
             floorsDetections.OnWater += EneableDoubleJump;
-            floorsDetections.UnderWater += () => 
+            floorsDetections.UnderWater += () =>
                 {
                     canSwim = true;
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
                     rb.gravityScale = .75f;
                 };
-            floorsDetections.OnAir += () => 
-                { 
-                    canSwim = false; 
+            floorsDetections.OnAir += () =>
+                {
+                    canSwim = false;
                     rb.gravityScale = 1f;
                 };
         }
-         
+
         void Update()
         {
             if (!canDoubleJump) { return; }
@@ -51,8 +51,9 @@ namespace GGJ2026.Ability.Frog
 
         void FixedUpdate()
         {
-            if(!canSwim) { return; }
+            if (!canSwim) { movController.anim.SetTrigger("!Swim"); return; }
             rb.linearVelocity = new Vector2(movController.horizontalInput * swimSpeed, movController.verticalInput * swimSpeed);
+            movController.anim.SetTrigger("Swim");
         }
 
         void DoubleJump()
@@ -60,6 +61,7 @@ namespace GGJ2026.Ability.Frog
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * doubleJumpForce, ForceMode2D.Impulse);
             canDoubleJump = false;
+            movController.anim.SetTrigger("DoubleJump");
         }
 
         void EneableDoubleJump()

@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: caf8732acc9478f4fbba633f95eb9c50
+guid: 4630777217252494f80cae650ee7dbf8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7471605712258904011
-    second: nadar todos_0
+      213: 7655217333416448951
+    second: Salto aguila sprites_0
   - first:
-      213: -6921531184198154439
-    second: nadar todos_1
+      213: 7792045538034974757
+    second: Salto aguila sprites_1
   - first:
-      213: 8393437178048096341
-    second: nadar todos_2
+      213: 8523545072632578318
+    second: Salto aguila sprites_2
   - first:
-      213: -3040715748473899052
-    second: nadar todos_3
-  - first:
-      213: 146943961363742055
-    second: nadar todos_4
-  - first:
-      213: -6051687159895576025
-    second: nadar todos_5
+      213: 2576092185299594819
+    second: Salto aguila sprites_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nadar todos_0
+      name: Salto aguila sprites_0
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5305703e0368f4890800000000000000
-      internalID: -7471605712258904011
+      spriteID: 7b353bc0b9bcc3a60800000000000000
+      internalID: 7655217333416448951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nadar todos_1
+      name: Salto aguila sprites_1
       rect:
         serializedVersion: 2
         x: 960
@@ -178,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93784105f08c1ff90800000000000000
-      internalID: -6921531184198154439
+      spriteID: 5200e300228e22c60800000000000000
+      internalID: 7792045538034974757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nadar todos_2
+      name: Salto aguila sprites_2
       rect:
         serializedVersion: 2
         x: 1920
@@ -200,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5582d12a4aa7b7470800000000000000
-      internalID: 8393437178048096341
+      spriteID: e01cb497517b94670800000000000000
+      internalID: 8523545072632578318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nadar todos_3
+      name: Salto aguila sprites_3
       rect:
         serializedVersion: 2
         x: 2880
@@ -222,52 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d7f64d13253dc5d0800000000000000
-      internalID: -3040715748473899052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nadar todos_4
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 0
-        width: 960
-        height: 960
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76d79fa11cc0a0200800000000000000
-      internalID: 146943961363742055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nadar todos_5
-      rect:
-        serializedVersion: 2
-        x: 4800
-        y: 0
-        width: 960
-        height: 960
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 722b1ae5796140ca0800000000000000
-      internalID: -6051687159895576025
+      spriteID: 34e217d913e10c320800000000000000
+      internalID: 2576092185299594819
       vertices: []
       indices: 
       edges: []
@@ -276,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4815b6914c0ce3a49bc877916b2210c1
+    spriteID: b2444edefc691a7468fb592a8f88bee8
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nadar todos_0: -7471605712258904011
-      nadar todos_1: -6921531184198154439
-      nadar todos_2: 8393437178048096341
-      nadar todos_3: -3040715748473899052
-      nadar todos_4: 146943961363742055
-      nadar todos_5: -6051687159895576025
+      Salto aguila sprites_0: 7655217333416448951
+      Salto aguila sprites_1: 7792045538034974757
+      Salto aguila sprites_2: 8523545072632578318
+      Salto aguila sprites_3: 2576092185299594819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -31,6 +31,7 @@ public class EagleAbility : MonoBehaviour
             if (movTimer <= 0)
             {
                 movController.stopMovement = false;
+                canLevitate = true;
             }
         };
     }

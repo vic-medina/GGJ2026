@@ -23,7 +23,10 @@ namespace GGJ2026.Player.BaseMovement
 
         void Start()
         {
+            floorDetect.OnGround += () =>
+            {
 
+            };
         }
 
         public void Restart()
@@ -41,10 +44,22 @@ namespace GGJ2026.Player.BaseMovement
             if (stopMovement) { return; }
             horizontalInput = Input.GetAxisRaw("Horizontal");
             verticalInput = Input.GetAxisRaw("Vertical");
+            //anim.SetBool("Idle", floorDetect.isGrounded);
 
-            // Activar animación de correr
-            bool isRunning = horizontalInput != 0 && !stopMovement;
-            anim.SetBool("Run", isRunning);
+            if (floorDetect.isGrounded)
+            {
+                Debug.Log("Suelo");
+                bool isRunning = horizontalInput != 0 && !stopMovement;
+                Debug.Log(isRunning);
+                anim.SetBool("Run", isRunning);
+                anim.SetBool("Idle", !isRunning);
+            }
+            else
+            {
+                // En el aire: desactivar Idle y Run
+                anim.SetBool("Run", false);
+                anim.SetBool("Idle", false);
+            }
 
             // Flip según dirección
             if (horizontalInput > 0)
@@ -72,6 +87,7 @@ namespace GGJ2026.Player.BaseMovement
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            anim.SetTrigger("Jump");
         }
     }
 }

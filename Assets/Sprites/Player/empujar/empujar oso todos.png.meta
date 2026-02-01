@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 480
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -150,20 +150,20 @@ TextureImporter:
       name: empujar oso todos_0
       rect:
         serializedVersion: 2
-        x: 185
-        y: 35
-        width: 662
-        height: 737
+        x: 0
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6a402ea7b9a086d0800000000000000
-      internalID: -2990203546208548243
+      spriteID: f92218d83408884489accb75d91efefb
+      internalID: 1515767285
       vertices: []
       indices: 
       edges: []
@@ -172,20 +172,20 @@ TextureImporter:
       name: empujar oso todos_1
       rect:
         serializedVersion: 2
-        x: 1148
+        x: 960
         y: 0
-        width: 647
-        height: 822
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 488e3eb98ac1caa10800000000000000
-      internalID: 1921942651475847300
+      spriteID: 1b149c079bf5dfe40a625992793d7c67
+      internalID: -1070062381
       vertices: []
       indices: 
       edges: []
@@ -194,20 +194,20 @@ TextureImporter:
       name: empujar oso todos_2
       rect:
         serializedVersion: 2
-        x: 2112
-        y: 25
-        width: 647
-        height: 812
+        x: 1920
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5750e977d43c18520800000000000000
-      internalID: 2702655988885751157
+      spriteID: 24a16cc7bfc8fca44b898513cfd7bd2a
+      internalID: 1132894777
       vertices: []
       indices: 
       edges: []
@@ -216,20 +216,20 @@ TextureImporter:
       name: empujar oso todos_3
       rect:
         serializedVersion: 2
-        x: 3063
-        y: 37
-        width: 647
-        height: 767
+        x: 2880
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 23e5dab70b0025620800000000000000
-      internalID: 2761270279520738866
+      spriteID: fa79300984e84e94786190db3b29a13c
+      internalID: -1308394309
       vertices: []
       indices: 
       edges: []
@@ -238,20 +238,20 @@ TextureImporter:
       name: empujar oso todos_4
       rect:
         serializedVersion: 2
-        x: 4026
-        y: 50
-        width: 647
-        height: 737
+        x: 3840
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4459ed8dd07651100800000000000000
-      internalID: 78081877719553348
+      spriteID: c722fd05a2c948c449c68eac679da2c1
+      internalID: -1590879996
       vertices: []
       indices: 
       edges: []
@@ -260,20 +260,20 @@ TextureImporter:
       name: empujar oso todos_5
       rect:
         serializedVersion: 2
-        x: 4929
-        y: 52
-        width: 647
-        height: 707
+        x: 4800
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e88acb430e47f02f0800000000000000
-      internalID: -1004455685574055794
+      spriteID: 8589712062722624197a9e6d24884c10
+      internalID: 1077968297
       vertices: []
       indices: 
       edges: []
@@ -282,20 +282,20 @@ TextureImporter:
       name: empujar oso todos_6
       rect:
         serializedVersion: 2
-        x: 5909
-        y: 30
-        width: 647
-        height: 767
+        x: 5760
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d367004f89997c9a0800000000000000
-      internalID: -6212828278726560195
+      spriteID: 709ae39bc7a9c644fbd78a2567998d87
+      internalID: 1199773186
       vertices: []
       indices: 
       edges: []
@@ -304,20 +304,20 @@ TextureImporter:
       name: empujar oso todos_7
       rect:
         serializedVersion: 2
-        x: 6918
-        y: 44
-        width: 647
-        height: 737
+        x: 6720
+        y: 0
+        width: 960
+        height: 840
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9cf10a61a37508f40800000000000000
-      internalID: 5728674633014583241
+      spriteID: af3e2336b5086e24f8366e7734c9caf7
+      internalID: 2097915473
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d06666575ca71da42960f7bdaeb60389
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +336,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      empujar oso todos_0: -2990203546208548243
-      empujar oso todos_1: 1921942651475847300
-      empujar oso todos_2: 2702655988885751157
-      empujar oso todos_3: 2761270279520738866
-      empujar oso todos_4: 78081877719553348
-      empujar oso todos_5: -1004455685574055794
-      empujar oso todos_6: -6212828278726560195
-      empujar oso todos_7: 5728674633014583241
+      empujar oso todos_0: 1515767285
+      empujar oso todos_1: -1070062381
+      empujar oso todos_2: 1132894777
+      empujar oso todos_3: -1308394309
+      empujar oso todos_4: -1590879996
+      empujar oso todos_5: 1077968297
+      empujar oso todos_6: 1199773186
+      empujar oso todos_7: 2097915473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
