@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: d524ba2574a08a944bbd5e7eabd7a19d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8400780709558301245
+    second: puertaoso_linea_0
+  - first:
+      213: -2136539565870032234
+    second: puertaoso_linea_1
+  - first:
+      213: -2930107152072578224
+    second: puertaoso_linea_2
+  - first:
+      213: 7593904793405979796
+    second: puertaoso_linea_3
+  - first:
+      213: 8566811592368830195
+    second: puertaoso_linea_4
+  - first:
+      213: 4961463693040150571
+    second: puertaoso_linea_5
+  - first:
+      213: -3392257517606972978
+    second: puertaoso_linea_6
+  - first:
+      213: -2006077757983289436
+    second: puertaoso_linea_7
+  - first:
+      213: 180069449033135669
+    second: puertaoso_linea_8
+  - first:
+      213: -625019804323721949
+    second: puertaoso_linea_9
+  - first:
+      213: -8060107266985725295
+    second: puertaoso_linea_10
+  - first:
+      213: 4293742937336981578
+    second: puertaoso_linea_11
+  - first:
+      213: -6961749121757980182
+    second: puertaoso_linea_12
+  - first:
+      213: -721053675879091986
+    second: puertaoso_linea_13
+  - first:
+      213: 1780991135441401833
+    second: puertaoso_linea_14
+  - first:
+      213: 2418593055071524766
+    second: puertaoso_linea_15
+  - first:
+      213: -9084152840635903744
+    second: puertaoso_linea_16
+  - first:
+      213: 7959164243214316038
+    second: puertaoso_linea_17
+  - first:
+      213: 8261982197634588593
+    second: puertaoso_linea_18
+  - first:
+      213: -4058759340700065251
+    second: puertaoso_linea_19
+  - first:
+      213: -6223882570364272140
+    second: puertaoso_linea_20
+  - first:
+      213: 5518253779882335429
+    second: puertaoso_linea_21
+  - first:
+      213: 4508023281231595342
+    second: puertaoso_linea_22
+  - first:
+      213: -696372704872913346
+    second: puertaoso_linea_23
+  - first:
+      213: 6386237917328024048
+    second: puertaoso_linea_24
+  - first:
+      213: -4344117775270094912
+    second: puertaoso_linea_25
+  - first:
+      213: -8162077183198380094
+    second: puertaoso_linea_26
+  - first:
+      213: -2886374017599170151
+    second: puertaoso_linea_27
+  - first:
+      213: -2349508967559040532
+    second: puertaoso_linea_28
+  - first:
+      213: -3085518183690507956
+    second: puertaoso_linea_29
+  - first:
+      213: -4907912991071591801
+    second: puertaoso_linea_30
+  - first:
+      213: -5930456977493265148
+    second: puertaoso_linea_31
+  - first:
+      213: -6911329312639303767
+    second: puertaoso_linea_32
+  - first:
+      213: 8490835968795702781
+    second: puertaoso_linea_33
+  - first:
+      213: -3237324388752681960
+    second: puertaoso_linea_34
+  - first:
+      213: -7006402226784976559
+    second: puertaoso_linea_35
+  - first:
+      213: 7984322438624627922
+    second: puertaoso_linea_36
+  - first:
+      213: 3168310661950944196
+    second: puertaoso_linea_37
+  - first:
+      213: 9139372780020777794
+    second: puertaoso_linea_38
+  - first:
+      213: 4874667393250723602
+    second: puertaoso_linea_39
+  - first:
+      213: -7866468583135158124
+    second: puertaoso_linea_40
+  - first:
+      213: -4841138811943078285
+    second: puertaoso_linea_41
+  - first:
+      213: -8599155289911838065
+    second: puertaoso_linea_42
+  - first:
+      213: -5994876499949324240
+    second: puertaoso_linea_43
+  - first:
+      213: 1652174555026604785
+    second: puertaoso_linea_44
+  - first:
+      213: 1598434903769506566
+    second: puertaoso_linea_45
+  - first:
+      213: -457397091355741464
+    second: puertaoso_linea_46
+  - first:
+      213: 7509081381378553604
+    second: puertaoso_linea_47
+  - first:
+      213: 8454880351119293072
+    second: puertaoso_linea_48
+  - first:
+      213: 236794112458195117
+    second: puertaoso_linea_49
+  - first:
+      213: -4816391667292348541
+    second: puertaoso_linea_50
+  - first:
+      213: 5874160974308210162
+    second: puertaoso_linea_51
+  - first:
+      213: -3149310244529599251
+    second: puertaoso_linea_52
+  - first:
+      213: -7648494762013166342
+    second: puertaoso_linea_53
+  - first:
+      213: -8383650049703437083
+    second: puertaoso_linea_54
+  - first:
+      213: 5950399646938084946
+    second: puertaoso_linea_55
+  - first:
+      213: 1071948222912597204
+    second: puertaoso_linea_56
+  - first:
+      213: 299658735478166148
+    second: puertaoso_linea_57
+  - first:
+      213: 3055913956335608860
+    second: puertaoso_linea_58
+  - first:
+      213: -6160680931863860445
+    second: puertaoso_linea_59
+  - first:
+      213: 7111827121812233609
+    second: puertaoso_linea_60
+  - first:
+      213: 7587968654772900928
+    second: puertaoso_linea_61
+  - first:
+      213: 2978441504432538309
+    second: puertaoso_linea_62
+  - first:
+      213: 7057362158397605099
+    second: puertaoso_linea_63
+  - first:
+      213: 67511068556988564
+    second: puertaoso_linea_64
+  - first:
+      213: -3333009277155557023
+    second: puertaoso_linea_65
+  - first:
+      213: 7666381132635104169
+    second: puertaoso_linea_66
+  - first:
+      213: 5994183258922001956
+    second: puertaoso_linea_67
+  - first:
+      213: 2263382703265494543
+    second: puertaoso_linea_68
+  - first:
+      213: -56580265850639235
+    second: puertaoso_linea_69
+  - first:
+      213: 270906024433521710
+    second: puertaoso_linea_70
+  - first:
+      213: 3137707179903258129
+    second: puertaoso_linea_71
+  - first:
+      213: -2217104635116646262
+    second: puertaoso_linea_72
+  - first:
+      213: 194471203987442249
+    second: puertaoso_linea_73
+  - first:
+      213: -3193087399911339688
+    second: puertaoso_linea_74
+  - first:
+      213: 1065433020410245556
+    second: puertaoso_linea_75
+  - first:
+      213: -8857929742939290743
+    second: puertaoso_linea_76
+  - first:
+      213: -193759515911391813
+    second: puertaoso_linea_77
+  - first:
+      213: 2234689591569977326
+    second: puertaoso_linea_78
+  - first:
+      213: -7412849673641331472
+    second: puertaoso_linea_79
+  - first:
+      213: 3718713634681447195
+    second: puertaoso_linea_80
+  - first:
+      213: 928168969904441692
+    second: puertaoso_linea_81
+  - first:
+      213: -8480532111089302895
+    second: puertaoso_linea_82
+  - first:
+      213: -281021331402903687
+    second: puertaoso_linea_83
+  - first:
+      213: -9146620561078159099
+    second: puertaoso_linea_84
+  - first:
+      213: -3674542604769052853
+    second: puertaoso_linea_85
+  - first:
+      213: -5796290228267763404
+    second: puertaoso_linea_86
+  - first:
+      213: 4235462148307558874
+    second: puertaoso_linea_87
+  - first:
+      213: 5635716225507209457
+    second: puertaoso_linea_88
+  - first:
+      213: -8597586815468835306
+    second: puertaoso_linea_89
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: puertaoso_linea_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d323d2dcb81959470800000000000000
+      internalID: 8400780709558301245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69adfbfa59c7952e0800000000000000
+      internalID: -2136539565870032234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05be1eec11b2657d0800000000000000
+      internalID: -2930107152072578224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c7915ec28f26960800000000000000
+      internalID: 7593904793405979796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6b7dc11cd63e670800000000000000
+      internalID: 8566811592368830195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28e7ad11f8aad440800000000000000
+      internalID: 4961463693040150571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_6
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1536cb2c74ce0d0800000000000000
+      internalID: -3392257517606972978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_7
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af089368eaf824e0800000000000000
+      internalID: -2006077757983289436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaoso_linea_8
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5363588b53cbf7200800000000000000
+      internalID: 180069449033135669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a00d24e9055c2b945a79116e5be7b5dd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      puertaoso_linea_0: 8400780709558301245
+      puertaoso_linea_1: -2136539565870032234
+      puertaoso_linea_2: -2930107152072578224
+      puertaoso_linea_3: 7593904793405979796
+      puertaoso_linea_4: 8566811592368830195
+      puertaoso_linea_5: 4961463693040150571
+      puertaoso_linea_6: -3392257517606972978
+      puertaoso_linea_7: -2006077757983289436
+      puertaoso_linea_8: 180069449033135669
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

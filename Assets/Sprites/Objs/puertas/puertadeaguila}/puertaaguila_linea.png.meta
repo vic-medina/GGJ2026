@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 8709fbeabc899544b8dd147470d7c092
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6294957517216108196
+    second: puertaaguila_linea_0
+  - first:
+      213: 679852265555842947
+    second: puertaaguila_linea_1
+  - first:
+      213: 6333407191832549782
+    second: puertaaguila_linea_2
+  - first:
+      213: 8843570209049428679
+    second: puertaaguila_linea_3
+  - first:
+      213: 5316301410614513020
+    second: puertaaguila_linea_4
+  - first:
+      213: -378053824938121734
+    second: puertaaguila_linea_5
+  - first:
+      213: 6514032357608897467
+    second: puertaaguila_linea_6
+  - first:
+      213: -4632690687755010366
+    second: puertaaguila_linea_7
+  - first:
+      213: 4627440301075483995
+    second: puertaaguila_linea_8
+  - first:
+      213: -5465780193228403142
+    second: puertaaguila_linea_9
+  - first:
+      213: 8237065883255456313
+    second: puertaaguila_linea_10
+  - first:
+      213: 7408775810754055073
+    second: puertaaguila_linea_11
+  - first:
+      213: 1256352916782557570
+    second: puertaaguila_linea_12
+  - first:
+      213: -2070426567954450414
+    second: puertaaguila_linea_13
+  - first:
+      213: -3876853851601548948
+    second: puertaaguila_linea_14
+  - first:
+      213: -3759984615605894116
+    second: puertaaguila_linea_15
+  - first:
+      213: 2395123079511974806
+    second: puertaaguila_linea_16
+  - first:
+      213: 8202886239916621077
+    second: puertaaguila_linea_17
+  - first:
+      213: 4573430520410473281
+    second: puertaaguila_linea_18
+  - first:
+      213: 4671490265916977534
+    second: puertaaguila_linea_19
+  - first:
+      213: -692607339045468885
+    second: puertaaguila_linea_20
+  - first:
+      213: -6081261209695619909
+    second: puertaaguila_linea_21
+  - first:
+      213: -4277149514627466592
+    second: puertaaguila_linea_22
+  - first:
+      213: -6427705362149455363
+    second: puertaaguila_linea_23
+  - first:
+      213: 6334734598693368537
+    second: puertaaguila_linea_24
+  - first:
+      213: 2769032132494582578
+    second: puertaaguila_linea_25
+  - first:
+      213: -2808071867939840400
+    second: puertaaguila_linea_26
+  - first:
+      213: 1961170060007608529
+    second: puertaaguila_linea_27
+  - first:
+      213: -1195188922441726315
+    second: puertaaguila_linea_28
+  - first:
+      213: -1516732314681215648
+    second: puertaaguila_linea_29
+  - first:
+      213: 7111081178873051932
+    second: puertaaguila_linea_30
+  - first:
+      213: -6240334867370462048
+    second: puertaaguila_linea_31
+  - first:
+      213: -2878586711736717465
+    second: puertaaguila_linea_32
+  - first:
+      213: 1475699416409775888
+    second: puertaaguila_linea_33
+  - first:
+      213: 1780421087648476533
+    second: puertaaguila_linea_34
+  - first:
+      213: 2171113690391855473
+    second: puertaaguila_linea_35
+  - first:
+      213: -6842791053195761009
+    second: puertaaguila_linea_36
+  - first:
+      213: 3332871478589298966
+    second: puertaaguila_linea_37
+  - first:
+      213: -3933993360673890714
+    second: puertaaguila_linea_38
+  - first:
+      213: -1927324296366630476
+    second: puertaaguila_linea_39
+  - first:
+      213: -7695214324689521139
+    second: puertaaguila_linea_40
+  - first:
+      213: -8545874262383515714
+    second: puertaaguila_linea_41
+  - first:
+      213: -981504414661294708
+    second: puertaaguila_linea_42
+  - first:
+      213: -5975981162647824213
+    second: puertaaguila_linea_43
+  - first:
+      213: -2116427240336965285
+    second: puertaaguila_linea_44
+  - first:
+      213: -3152824190498228456
+    second: puertaaguila_linea_45
+  - first:
+      213: 7918044159052750832
+    second: puertaaguila_linea_46
+  - first:
+      213: -3377000615003278285
+    second: puertaaguila_linea_47
+  - first:
+      213: -284832305988350257
+    second: puertaaguila_linea_48
+  - first:
+      213: -5482508225727464086
+    second: puertaaguila_linea_49
+  - first:
+      213: 6479523124936073476
+    second: puertaaguila_linea_50
+  - first:
+      213: 8591611309845089788
+    second: puertaaguila_linea_51
+  - first:
+      213: -8729510354671958686
+    second: puertaaguila_linea_52
+  - first:
+      213: 7648844360206825322
+    second: puertaaguila_linea_53
+  - first:
+      213: -2604843076959499140
+    second: puertaaguila_linea_54
+  - first:
+      213: 1809559893175622236
+    second: puertaaguila_linea_55
+  - first:
+      213: 1685037399436350691
+    second: puertaaguila_linea_56
+  - first:
+      213: 1113349886126003090
+    second: puertaaguila_linea_57
+  - first:
+      213: -7759968241514156301
+    second: puertaaguila_linea_58
+  - first:
+      213: -879080148248024430
+    second: puertaaguila_linea_59
+  - first:
+      213: -7115010846856340329
+    second: puertaaguila_linea_60
+  - first:
+      213: -4409234217605841666
+    second: puertaaguila_linea_61
+  - first:
+      213: -7245468140101731948
+    second: puertaaguila_linea_62
+  - first:
+      213: -4064879498865517670
+    second: puertaaguila_linea_63
+  - first:
+      213: -8130867895342936009
+    second: puertaaguila_linea_64
+  - first:
+      213: -8383564435985156112
+    second: puertaaguila_linea_65
+  - first:
+      213: -3190146164775887676
+    second: puertaaguila_linea_66
+  - first:
+      213: 3580650020139291416
+    second: puertaaguila_linea_67
+  - first:
+      213: -2412655806783050453
+    second: puertaaguila_linea_68
+  - first:
+      213: 6524007720790744722
+    second: puertaaguila_linea_69
+  - first:
+      213: -7559490954567592126
+    second: puertaaguila_linea_70
+  - first:
+      213: 4994834189623657090
+    second: puertaaguila_linea_71
+  - first:
+      213: 6373852116435935365
+    second: puertaaguila_linea_72
+  - first:
+      213: 896136790741913273
+    second: puertaaguila_linea_73
+  - first:
+      213: -2047047503892336008
+    second: puertaaguila_linea_74
+  - first:
+      213: -1164268696812256297
+    second: puertaaguila_linea_75
+  - first:
+      213: -8445344000716608978
+    second: puertaaguila_linea_76
+  - first:
+      213: 6416496136419985960
+    second: puertaaguila_linea_77
+  - first:
+      213: -3964097044006971941
+    second: puertaaguila_linea_78
+  - first:
+      213: 4328848081698700850
+    second: puertaaguila_linea_79
+  - first:
+      213: -6159635614499961700
+    second: puertaaguila_linea_80
+  - first:
+      213: -6565663154753880026
+    second: puertaaguila_linea_81
+  - first:
+      213: 6727654716343554379
+    second: puertaaguila_linea_82
+  - first:
+      213: -4406847364586284668
+    second: puertaaguila_linea_83
+  - first:
+      213: 3827288829823052594
+    second: puertaaguila_linea_84
+  - first:
+      213: 4927009834898886248
+    second: puertaaguila_linea_85
+  - first:
+      213: 8051043112732199139
+    second: puertaaguila_linea_86
+  - first:
+      213: 6509458541355056337
+    second: puertaaguila_linea_87
+  - first:
+      213: 2581952825973400103
+    second: puertaaguila_linea_88
+  - first:
+      213: -1999671915656300044
+    second: puertaaguila_linea_89
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: puertaaguila_linea_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae47d1828e2c5750800000000000000
+      internalID: 6294957517216108196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387533498025f6900800000000000000
+      internalID: 679852265555842947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699551ff848c4e750800000000000000
+      internalID: 6333407191832549782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c24e98ff3caaba70800000000000000
+      internalID: 8843570209049428679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d069a47fb47c940800000000000000
+      internalID: 5316301410614513020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5e59a9c02e0caf0800000000000000
+      internalID: -378053824938121734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_6
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbbdaa9aed766a50800000000000000
+      internalID: 6514032357608897467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_7
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce3a125d5065bfb0800000000000000
+      internalID: -4632690687755010366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puertaaguila_linea_8
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 320
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d4ee4cf68f73040800000000000000
+      internalID: 4627440301075483995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dd5a7755250ee434bb1f04d5b6fad2e8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      puertaaguila_linea_0: 6294957517216108196
+      puertaaguila_linea_1: 679852265555842947
+      puertaaguila_linea_2: 6333407191832549782
+      puertaaguila_linea_3: 8843570209049428679
+      puertaaguila_linea_4: 5316301410614513020
+      puertaaguila_linea_5: -378053824938121734
+      puertaaguila_linea_6: 6514032357608897467
+      puertaaguila_linea_7: -4632690687755010366
+      puertaaguila_linea_8: 4627440301075483995
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

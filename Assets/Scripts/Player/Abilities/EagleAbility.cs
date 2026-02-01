@@ -46,6 +46,7 @@ public class EagleAbility : MonoBehaviour
         dashDirection = movController.horizontalInput;
         if (!canDash)
         {
+            movController.anim.SetTrigger("!Dash");
             dashTimer -= Time.deltaTime;
             if (dashTimer <= 0)
             {
@@ -72,9 +73,10 @@ public class EagleAbility : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            if (!canLevitate) { return; }
+            if (!canLevitate) { movController.anim.SetTrigger("!Floating"); return; }
             rb.gravityScale = .3f;
             rb.linearVelocity = new Vector2(movController.horizontalInput, -1f);
+            movController.anim.SetTrigger("Floating");
         }
     }
 
@@ -88,5 +90,6 @@ public class EagleAbility : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(direction.normalized * dashForce, ForceMode2D.Impulse);
+        movController.anim.SetTrigger("Dash");
     }
 }

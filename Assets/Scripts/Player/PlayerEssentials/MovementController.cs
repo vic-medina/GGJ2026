@@ -48,9 +48,9 @@ namespace GGJ2026.Player.BaseMovement
 
             if (floorDetect.isGrounded)
             {
-                Debug.Log("Suelo");
+                //Debug.Log("Suelo");
                 bool isRunning = horizontalInput != 0 && !stopMovement;
-                Debug.Log(isRunning);
+                //Debug.Log(isRunning);
                 anim.SetBool("Run", isRunning);
                 anim.SetBool("Idle", !isRunning);
             }
